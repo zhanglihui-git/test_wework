@@ -24,4 +24,11 @@ class ReadConfig:
         value = self.cf.get("HEADERS", param)
         return value
 
+    def get_url(self, param):
+        value = self.cf.get("URL", param)
+        return value
 
+# if __name__ == '__main__':
+#     test = ReadConfig()
+#     print(test.get_http("baseurl"))
+#     # print(t)
